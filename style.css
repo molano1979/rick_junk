@@ -28,11 +28,74 @@ h6{
 
 /*navigation*/
 .outer-navigation {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.2)),url(images/logo.png);
+    /*background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.2)),url(images/imagecar.jpg);*/
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7),rgba(4,9,30,0.7)),url(images/imagecar.jpg);
     height: 100vh;
     background-size: cover;
     background-position: center;
     padding: 0;
     margin: 0;
     padding-top: 20px; 
+}
+.nav-content {
+    max-width: 1500px;
+    margin: 0 auto;
+    position: relative;
+    height: 100vh;
+}
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navigation a:hover{
+    color: red;
+}
+
+/* beginning of login nav */
+.right-navigation {
+    flex: 0.5;
+    text-align: right;
+    padding-right: 30px;
+}
+
+
+.right-navigation .login-link{
+    background: white;
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: gray;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
+/* end of login nav */
+
+/* beginning of other navs */
+.left-navigation {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    flex: 0.5;
+}
+
+.left-navigation a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/*hero styles */
+.main-title-container {
+   font-size: 2.2rem; 
+   color: white;
+   max-width: 500px;
+   float: right;
+   position: absolute;
+   top: 30%;
+   right: 40px;
+   margin-left: 20px;
+   
 }
