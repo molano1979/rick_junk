@@ -56,7 +56,7 @@
 }
 
 .navbar__links {
-    color: rgb(188, 178, 178);
+    color: rgb(212, 212, 220);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -67,7 +67,7 @@
 }
 
 .navbar__links:hover {
-    color: #9518fc;
+    color: #1414eb;
     transition: all 0.3s ease;
 }
 
@@ -152,7 +152,7 @@
 }
 
 /* Hero Section */
-.hero{
+.hero {
     background: #000000;
     background: linear-gradient(to right, #161616,#000000);
     padding: 200px 0;
@@ -173,9 +173,150 @@
 .hero__heading {
     font-size: 100px;
     margin-bottom: 24px;
-    color: rgb(188, 178, 178);
+    color: rgb(212, 212, 220);
 }
 
 .hero__heading span {
-    background: ;
+    background: #0575E6;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #021B79, #0575E6);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #021B79, #0575E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background-size: 100%;
+-webkit-background-clip: text;
+-moz-background-clip: text;
+-webkit-text-fill-color: transparent;
+-mo-text-fill-color:transparent;    
+}
+
+.hero__description {
+    font-size: 60px;
+    background: #6190E8;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #A7BFE8, #6190E8);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #A7BFE8, #6190E8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background-size: 100%;
+-webkit-background-clip: text;
+-moz-background-clip: text;
+-webkit-text-fill-color: transparent;
+-mo-text-fill-color:transparent; 
+}
+.highlight {
+    border-bottom: 4px solid rgb(212, 212, 220);
+}
+@media screen and (max-width: 768px) {
+    .hero__heading{
+        font-size: 60px;
+    }
+    .hero__description {
+        font-size: 40px;
+    }
+}
+/* About Section */
+.main {
+    background-color: #131313;
+    padding: 10rem 0;
+}
+.main__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    height: 90%;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 50px;
+}
+
+.main__content {
+    color:rgb(212, 212, 220);
+    width: 100%;
+}
+
+.main__content h1 {
+    font-size: 2rem;
+    background: #0575E6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #021B79, #0575E6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #021B79, #0575E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -mo-text-fill-color:transparent;    
+}
+
+.main__content h2 {
+    font-size: 4rem;
+    background: #6190E8;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #A7BFE8, #6190E8);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #A7BFE8, #6190E8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -mo-text-fill-color:transparent; 
+}
+
+.main__content p{
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.main__btn {
+    font-size: 1.8rem;
+    background: #0575E6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #021B79, #0575E6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #021B79, #0575E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+padding: 20px 60px;
+border-radius: 4px;
+margin-top: 2rem;
+cursor: pointer;
+position: relative;
+transition: all 0.35s;
+outline:none;
+}
+
+.main__btn a {
+    position: relative;
+    z-index: 2;
+    color:rgb(212, 212, 220);
+    text-decoration: none;
+}
+
+.main__btn::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #6190E8;
+    transition: all 0.35s;
+    border-radius: 4px;
+}
+
+.main__btn:hover {
+    columns: rgb(212, 212, 220);
+}
+
+.main__btn:hover:after{
+    width: 100%;
+}
+.main__img--container {
+    text-align: center;
+}
+
+.main__img--card{
+    margin: 10px;
+    height: 500px;
+    width: 500px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color:rgb(212, 212, 220);
+    background-image: #6190E8;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #A7BFE8, #6190E8);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #A7BFE8, #6190E8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
 }
